@@ -26,9 +26,9 @@ pipeline {
        stage('Docker Build & Push') {
             steps {
                 script {
-                    sh 'docker build -t sapteshs19/healthcare:latest .'
+                    sh 'docker build -t sapteshs19/healthcare1:latest .'
                     sh 'docker login -u sapteshs19 -p Iamsaptesh@123'
-                    sh 'docker push sapteshs19/healthcare:latest'
+                    sh 'docker push sapteshs19/healthcare1:latest'
                 }
             }
         }
